@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>建設業専門 経営・現場コンサルティング｜一人親方・小規模事業者を全力支援</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Noto+Sans+JP:wght@400;500;700;900&family=Bebas+Neue&display=swap" rel="stylesheet">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FMY2302SH4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag("js", new Date());
+    gtag("config", "G-FMY2302SH4");
+  </script>
+<style>
+  :root {
+    --black: #0a0a0a;
+    --white: #ffffff;
+    --red: #d62828;
+    --red-dark: #a01f1f;
+    --gray-light: #f4f4f4;
+    --gray-mid: #e0e0e0;
+    --gray-text: #555;
+    --yellow: #f7c948;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background: var(--white);
+    color: var(--black);
+    overflow-x: hidden;
+  }
+
+  /* ===== HEADER ===== */
+  header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    background: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 32px;
+    height: 64px;
+  }
+
+  .header-logo {
+    font-family: 'Oswald', sans-serif;
+    color: var(--white);
+    font-size: 1.1rem;
+    letter-spacing: 0.05em;
+  }
+  .header-logo span { color: var(--red); }
+
+  .header-ctas {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .btn-tel-header {
+    background: var(--red);
+    color: var(--white);
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 700;
+    font-size: 0.85rem;
+    padding: 8px 18px;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    transition: background 0.2s;
+    white-space: nowrap;
+  }
+  .btn-tel-header:hover { background: var(--red-dark); }
+
+  .btn-line-header {
+    background: transparent;
+    color: var(--white);
+    border: 1px solid rgba(255,255,255,0.3);
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+    font-size: 0.8rem;
+    padding: 8px 14px;
+    text-decoration: none;
+    transition: border-color 0.2s, color 0.2s;
+    white-space: nowrap;
+  }
+  .btn-line-header:hover { border-color: var(--white); }
+
+  /* ===== HERO ===== */
+  .hero {
+    min-height: 100vh;
+    background: var(--black);
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding: 100px 48px 80px;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    width: 55%;
+    height: 100%;
+    background: repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 3px,
+      rgba(214,40,40,0.06) 3px,
+      rgba(214,40,40,0.06) 6px
+    );
+  }
+
+  .hero::after {
+    content: 'CONSTRUCTION';
+    position: absolute;
+    bottom: -20px;
+    right: -10px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(80px, 12vw, 160px);
+    color: rgba(255,255,255,0.04);
+    letter-spacing: -0.02em;
+    user-select: none;
+    pointer-events: none;
+    white-space: nowrap;
+  }
+
+  .hero-inner {
+    position: relative;
+    z-index: 2;
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .hero-badge {
+    display: inline-block;
+    background: var(--red);
+    color: var(--white);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    padding: 5px 14px;
+    margin-bottom: 28px;
+    text-transform: uppercase;
+  }
+
+  .hero-catch {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 900;
+    font-size: clamp(2.2rem, 5vw, 4.2rem);
+    color: var(--white);
+    line-height: 1.2;
+    margin-bottom: 24px;
+    letter-spacing: -0.01em;
+  }
+  .hero-catch em {
+    font-style: normal;
+    color: var(--red);
+    border-bottom: 3px solid var(--red);
+  }
+
+  .hero-sub {
+    font-size: clamp(0.95rem, 1.5vw, 1.15rem);
+    color: rgba(255,255,255,0.65);
+    line-height: 1.8;
+    max-width: 520px;
+    margin-bottom: 48px;
+  }
+
+  .hero-ctas {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .btn-primary {
+    background: var(--red);
+    color: var(--white);
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 18px 36px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: background 0.2s, transform 0.15s;
+    letter-spacing: 0.02em;
+    position: relative;
+  }
+  .btn-primary::after {
+    content: '';
+    position: absolute;
+    bottom: -4px; right: -4px;
+    width: 100%; height: 100%;
+    border: 2px solid var(--red);
+    transition: transform 0.15s;
+  }
+  .btn-primary:hover { background: var(--red-dark); transform: translate(-2px, -2px); }
+  .btn-primary:hover::after { transform: translate(2px, 2px); }
+
+  .btn-secondary {
+    background: #06c755;
+    color: var(--white);
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 700;
+    font-size: 0.95rem;
+    padding: 18px 32px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: background 0.2s;
+    letter-spacing: 0.02em;
+  }
+  .btn-secondary:hover { background: #05a847; }
+
+  .hero-tel-block {
+    margin-top: 32px;
+    padding-top: 32px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .hero-tel-label {
+    font-size: 0.78rem;
+    color: rgba(255,255,255,0.5);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .hero-tel-number {
+    font-family: 'Oswald', sans-serif;
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
+    color: var(--white);
+    text-decoration: none;
+    letter-spacing: 0.04em;
+    transition: color 0.2s;
+  }
+  .hero-tel-number:hover { color: var(--yellow); }
+
+  .hero-tel-time {
+    font-size: 0.78rem;
+    color: rgba(255,255,255,0.45);
+  }
+
+  /* ===== PROBLEM ===== */
+  .section-problem {
+    background: var(--white);
+    padding: 100px 48px;
+  }
+
+  .section-problem-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .section-label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+  .section-label-line {
+    width: 40px;
+    height: 3px;
+    background: var(--red);
+  }
+  .section-label-text {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.2em;
+    color: var(--red);
+    text-transform: uppercase;
+  }
+
+  .section-title {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 900;
+    font-size: clamp(1.8rem, 3.5vw, 3rem);
+    line-height: 1.3;
+    margin-bottom: 56px;
+  }
+
+  .problems-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 0;
+    border: 2px solid var(--black);
+  }
+
+  .problem-item {
+    padding: 32px 28px;
+    border-right: 2px solid var(--black);
+    border-bottom: 2px solid var(--black);
+    position: relative;
+    transition: background 0.2s;
+  }
+  .problem-item:hover { background: var(--gray-light); }
+  .problem-item:last-child { border-right: none; }
+
+  .problem-number {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3.5rem;
+    color: var(--gray-mid);
+    line-height: 1;
+    margin-bottom: 8px;
+    transition: color 0.2s;
+  }
+  .problem-item:hover .problem-number { color: var(--red); opacity: 0.3; }
+
+  .problem-text {
+    font-size: 0.95rem;
+    font-weight: 500;
+    line-height: 1.7;
+    color: var(--black);
+  }
+
+  .problem-cta-block {
+    margin-top: 56px;
+    background: var(--black);
+    padding: 40px 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+
+  .problem-cta-text {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 900;
+    font-size: 1.4rem;
+    color: var(--white);
+  }
+  .problem-cta-text span { color: var(--red); }
+
+  /* ===== FEATURES ===== */
+  .section-features {
+    background: var(--gray-light);
+    padding: 100px 48px;
+  }
+
+  .section-features-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .features-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border: 2px solid var(--black);
+    background: var(--white);
+  }
+
+  .feature-item {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    border-bottom: 2px solid var(--black);
+    transition: background 0.2s;
+  }
+  .feature-item:last-child { border-bottom: none; }
+  .feature-item:hover { background: var(--gray-light); }
+
+  .feature-index {
+    background: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.8rem;
+    color: var(--white);
+    min-height: 120px;
+  }
+  .feature-item:hover .feature-index { background: var(--red); }
+
+  .feature-body {
+    padding: 28px 32px;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 24px;
+    align-items: start;
+  }
+
+  .feature-title {
+    font-weight: 900;
+    font-size: 1.05rem;
+    line-height: 1.5;
+    padding-top: 2px;
+  }
+
+  .feature-desc {
+    font-size: 0.9rem;
+    color: var(--gray-text);
+    line-height: 1.85;
+  }
+
+  /* ===== PROFILE ===== */
+  .section-profile {
+    background: var(--black);
+    padding: 100px 48px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .section-profile::before {
+    content: 'ABOUT';
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(60px, 10vw, 120px);
+    color: rgba(255,255,255,0.04);
+    user-select: none;
+    pointer-events: none;
+    letter-spacing: 0.05em;
+  }
+
+  .section-profile-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+  }
+
+  .profile-left {}
+
+  .profile-right {}
+
+  .profile-lead {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 900;
+    font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+    color: var(--white);
+    line-height: 1.5;
+    margin-bottom: 32px;
+  }
+  .profile-lead span { color: var(--red); }
+
+  .profile-body {
+    font-size: 0.92rem;
+    color: rgba(255,255,255,0.65);
+    line-height: 2;
+  }
+
+  .profile-points {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .profile-point {
+    background: rgba(255,255,255,0.05);
+    border-left: 3px solid var(--red);
+    padding: 18px 22px;
+  }
+
+  .profile-point-title {
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: var(--white);
+    margin-bottom: 6px;
+  }
+
+  .profile-point-desc {
+    font-size: 0.82rem;
+    color: rgba(255,255,255,0.55);
+    line-height: 1.7;
+  }
+
+  /* ===== FLOW ===== */
+  .section-flow {
+    background: var(--white);
+    padding: 100px 48px;
+  }
+
+  .section-flow-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .flow-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    position: relative;
+    margin-top: 56px;
+  }
+
+  .flow-step {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 0;
+    position: relative;
+  }
+
+  .flow-step::after {
+    content: '';
+    position: absolute;
+    left: 39px;
+    top: 80px;
+    bottom: 0;
+    width: 2px;
+    background: var(--gray-mid);
+  }
+  .flow-step:last-child::after { display: none; }
+
+  .flow-num {
+    width: 80px;
+    height: 80px;
+    background: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem;
+    color: var(--white);
+    flex-shrink: 0;
+    position: relative;
+    z-index: 2;
+  }
+
+  .flow-body {
+    padding: 20px 0 40px 32px;
+  }
+
+  .flow-title {
+    font-weight: 900;
+    font-size: 1.05rem;
+    margin-bottom: 8px;
+  }
+
+  .flow-desc {
+    font-size: 0.88rem;
+    color: var(--gray-text);
+    line-height: 1.8;
+  }
+
+  /* ===== FAQ ===== */
+  .section-faq {
+    background: var(--gray-light);
+    padding: 100px 48px;
+  }
+
+  .section-faq-inner {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .faq-list {
+    margin-top: 56px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border: 2px solid var(--black);
+    background: var(--white);
+  }
+
+  .faq-item {
+    border-bottom: 2px solid var(--black);
+  }
+  .faq-item:last-child { border-bottom: none; }
+
+  .faq-q {
+    padding: 24px 28px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    cursor: pointer;
+    transition: background 0.15s;
+    user-select: none;
+  }
+  .faq-q:hover { background: var(--gray-light); }
+
+  .faq-q-mark {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.4rem;
+    color: var(--red);
+    flex-shrink: 0;
+    line-height: 1.2;
+  }
+
+  .faq-q-text { flex: 1; line-height: 1.6; padding-top: 1px; }
+
+  .faq-q-arrow {
+    flex-shrink: 0;
+    font-size: 0.9rem;
+    color: var(--gray-text);
+    transition: transform 0.25s;
+    padding-top: 2px;
+  }
+
+  .faq-item.open .faq-q-arrow { transform: rotate(180deg); }
+
+  .faq-a {
+    display: none;
+    padding: 0 28px 24px 56px;
+    font-size: 0.88rem;
+    color: var(--gray-text);
+    line-height: 1.9;
+    border-top: 1px solid var(--gray-mid);
+  }
+  .faq-item.open .faq-a { display: block; padding-top: 20px; }
+
+  /* ===== CTA FINAL ===== */
+  .section-cta {
+    background: var(--red);
+    padding: 100px 48px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .section-cta::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 4px,
+      rgba(0,0,0,0.04) 4px,
+      rgba(0,0,0,0.04) 8px
+    );
+  }
+
+  .section-cta::after {
+    content: 'CALL';
+    position: absolute;
+    bottom: -40px;
+    right: -20px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(80px, 15vw, 200px);
+    color: rgba(0,0,0,0.06);
+    user-select: none;
+    pointer-events: none;
+  }
+
+  .section-cta-inner {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+  }
+
+  .cta-tagline {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 900;
+    font-size: clamp(1.6rem, 3vw, 2.6rem);
+    color: var(--white);
+    line-height: 1.4;
+    margin-bottom: 16px;
+  }
+
+  .cta-sub {
+    font-size: 0.95rem;
+    color: rgba(255,255,255,0.8);
+    margin-bottom: 48px;
+    line-height: 1.8;
+  }
+
+  .cta-tel-block {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--white);
+    padding: 32px 48px;
+    margin-bottom: 24px;
+    position: relative;
+  }
+  .cta-tel-block::after {
+    content: '';
+    position: absolute;
+    bottom: -5px; right: -5px;
+    width: 100%; height: 100%;
+    border: 2px solid rgba(255,255,255,0.4);
+  }
+
+  .cta-tel-label {
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    color: var(--red);
+    margin-bottom: 6px;
+    text-transform: uppercase;
+  }
+
+  .cta-tel-number {
+    font-family: 'Oswald', sans-serif;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    color: var(--black);
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    transition: color 0.2s;
+    display: block;
+  }
+  .cta-tel-number:hover { color: var(--red); }
+
+  .cta-tel-time {
+    font-size: 0.78rem;
+    color: var(--gray-text);
+    margin-top: 4px;
+  }
+
+  .cta-line-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: #06c755;
+    color: var(--white);
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 18px 40px;
+    text-decoration: none;
+    margin-top: 16px;
+    letter-spacing: 0.04em;
+    transition: background 0.2s;
+    width: 100%;
+    max-width: 400px;
+  }
+  .cta-line-btn:hover { background: #05a847; }
+
+  /* ===== FOOTER ===== */
+  footer {
+    background: var(--black);
+    padding: 40px 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .footer-logo {
+    font-family: 'Oswald', sans-serif;
+    color: var(--white);
+    font-size: 1rem;
+    letter-spacing: 0.08em;
+  }
+  .footer-logo span { color: var(--red); }
+
+  .footer-copy {
+    font-size: 0.78rem;
+    color: rgba(255,255,255,0.35);
+  }
+
+  /* ===== FLOATING CTA ===== */
+  .floating-cta {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 200;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: var(--black);
+    border-top: 3px solid var(--black);
+  }
+
+  .float-tel {
+    background: var(--red);
+    color: var(--white);
+    text-decoration: none;
+    padding: 16px 12px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 0.88rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    transition: background 0.2s;
+  }
+  .float-tel:hover { background: var(--red-dark); }
+  .float-tel strong { font-family: 'Oswald', sans-serif; font-size: 1.2rem; letter-spacing: 0.04em; }
+
+  .float-line {
+    background: #06c755;
+    color: var(--white);
+    text-decoration: none;
+    padding: 16px 12px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 0.88rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    transition: background 0.2s;
+  }
+  .float-line:hover { background: #05a847; }
+
+  /* ===== ANIMATIONS ===== */
+  .reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.65s ease, transform 0.65s ease;
+  }
+  .reveal.visible {
+    opacity: 1;
+    transform: none;
+  }
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 768px) {
+    header { padding: 0 16px; height: 56px; }
+    .header-logo { font-size: 0.85rem; }
+    .btn-tel-header { font-size: 0.78rem; padding: 7px 12px; }
+    .btn-line-header { display: none; }
+
+    .hero { padding: 90px 20px 120px; }
+    .hero-catch { font-size: 2rem; }
+
+    .section-problem,
+    .section-features,
+    .section-profile,
+    .section-flow,
+    .section-faq,
+    .section-cta { padding: 72px 20px; }
+
+    .section-profile-inner { grid-template-columns: 1fr; gap: 40px; }
+
+    .feature-body { grid-template-columns: 1fr; gap: 8px; }
+
+    .feature-index { min-height: 80px; }
+
+    .problem-cta-block { padding: 28px 24px; flex-direction: column; align-items: flex-start; }
+
+    footer { padding: 28px 20px; flex-direction: column; align-items: flex-start; }
+
+    .cta-tel-block { padding: 24px 32px; }
+
+    .floating-cta { display: grid; }
+  }
+
+  @media (min-width: 769px) {
+    .floating-cta { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-logo">建設業専門 <span>経営・現場</span> コンサルティング</div>
+  <div class="header-ctas">
+    <a href="tel:0425083638" class="btn-tel-header">📞 042-508-3638 まず電話で相談</a>
+    <a href="https://lin.ee/OU11HnHH" target="_blank" class="btn-line-header">LINEで相談</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-badge">建設業専門 経営・現場コンサルティング</div>
+    <h1 class="hero-catch">
+      現場に出ながら<br>
+      全部ひとりで<br>
+      やるのは、<em>もう限界だ。</em>
+    </h1>
+    <p class="hero-sub">
+      見積り・請求・人の段取り・元請けとの交渉——<br>
+      一人親方・小規模事業者が抱える現場と経営の悩みに、<br>
+      現場経験者が本気で向き合います。
+    </p>
+    <div class="hero-ctas">
+      <a href="tel:0425083638" class="btn-primary">
+        📞 まず電話で無料相談する
+      </a>
+      <a href="https://lin.ee/OU11HnHH" target="_blank" class="btn-secondary">
+        &#9642; LINEでも相談できます
+      </a>
+    </div>
+    <div class="hero-tel-block">
+      <div>
+        <div class="hero-tel-label">電話でのご相談（無料）</div>
+        <a href="tel:0425083638" class="hero-tel-number">042-508-3638</a>
+        <div class="hero-tel-time">平日 9:00〜18:00</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section class="section-problem">
+  <div class="section-problem-inner">
+    <div class="section-label reveal">
+      <div class="section-label-line"></div>
+      <div class="section-label-text">Your Challenges</div>
+    </div>
+    <h2 class="section-title reveal">こういう悩み、<br>ありませんか？</h2>
+
+    <div class="problems-grid">
+      <div class="problem-item reveal">
+        <div class="problem-number">01</div>
+        <div class="problem-text">仕事は途切れないのに、なぜかお金が残らない。</div>
+      </div>
+      <div class="problem-item reveal">
+        <div class="problem-number">02</div>
+        <div class="problem-text">元請けの言い値で人工単価が決まり、交渉する余地がない。</div>
+      </div>
+      <div class="problem-item reveal">
+        <div class="problem-number">03</div>
+        <div class="problem-text">現場に出ながら、見積り・請求・人の段取りまで全部自分でやっていて限界。</div>
+      </div>
+      <div class="problem-item reveal">
+        <div class="problem-number">04</div>
+        <div class="problem-text">人を雇いたい・育てたいが、教え方も給与の決め方も分からない。</div>
+      </div>
+      <div class="problem-item reveal">
+        <div class="problem-number">05</div>
+        <div class="problem-text">独立を考えているけど、何から始めていいか分からない。</div>
+      </div>
+      <div class="problem-item reveal">
+        <div class="problem-number">06</div>
+        <div class="problem-text">DX・クラウドって聞くけど、自分たちの規模で何をやればいいかイメージが湧かない。</div>
+      </div>
+    </div>
+
+    <div class="problem-cta-block reveal">
+      <div class="problem-cta-text">ひとつでも当てはまるなら、<span>まず話してみてください。</span></div>
+      <a href="tel:0425083638" class="btn-primary">📞 042-508-3638</a>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="section-features">
+  <div class="section-features-inner">
+    <div class="section-label reveal">
+      <div class="section-label-line"></div>
+      <div class="section-label-text">Our Services</div>
+    </div>
+    <h2 class="section-title reveal">サービスの内容</h2>
+
+    <div class="features-list">
+      <div class="feature-item reveal">
+        <div class="feature-index">01</div>
+        <div class="feature-body">
+          <div class="feature-title">現場改善</div>
+          <div class="feature-desc">同じメンバー・同じ時間でも、ムダな待ちや移動を減らして「1日あたりの利益」を上げます。段取り・工程表の標準化や、クレーム・やり直しを減らす仕組みづくりを一緒に行います。</div>
+        </div>
+      </div>
+      <div class="feature-item reveal">
+        <div class="feature-index">02</div>
+        <div class="feature-body">
+          <div class="feature-title">経営・お金の見える化</div>
+          <div class="feature-desc">「月にいくら残っているのか」「自分の手取りはいくらが適正か」を、シンプルな表と数字で一緒に確認できるようにします。</div>
+        </div>
+      </div>
+      <div class="feature-item reveal">
+        <div class="feature-index">03</div>
+        <div class="feature-body">
+          <div class="feature-title">集客・受注の仕組みづくり</div>
+          <div class="feature-desc">いきなり広告費をかけるのではなく、今付き合いのある元請け・取引先との関係の見直しや、紹介が自然に増える仕組みづくりから始めます。</div>
+        </div>
+      </div>
+      <div class="feature-item reveal">
+        <div class="feature-index">04</div>
+        <div class="feature-body">
+          <div class="feature-title">ちょっとだけDX</div>
+          <div class="feature-desc">「紙と口頭だけ」の現場から「必要な情報だけスマホで見える」状態へ。高額なシステムを入れるのではなく、今お使いのLINE・スマホ・スプレッドシートを中心に整えます。</div>
+        </div>
+      </div>
+      <div class="feature-item reveal">
+        <div class="feature-index">05</div>
+        <div class="feature-body">
+          <div class="feature-title">独立・許可取得支援</div>
+          <div class="feature-desc">独立・起業の手続きから、建設業許可取得までサポートします。初めてのことで不安な方も、一緒に一歩ずつ進めます。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROFILE -->
+<section class="section-profile">
+  <div class="section-profile-inner">
+    <div class="profile-left">
+      <div class="section-label reveal" style="margin-bottom:16px;">
+        <div class="section-label-line" style="background:rgba(255,255,255,0.3);"></div>
+        <div class="section-label-text" style="color:rgba(255,255,255,0.5);">About Us</div>
+      </div>
+      <div class="profile-lead reveal">
+        現場監督・IT・起業を<br>
+        すべて経験。<br>
+        <span>今も現場に出ています。</span>
+      </div>
+      <div class="profile-body reveal">
+        建機レンタルや住宅FCによるコンサルティングとは違い、私たちは売るべき商品を持っていません。<br><br>
+        必要ないツールや広告を売らない。現場と経営に本当に効くことだけに取り組みます。<br><br>
+        日本の職人さんが誇りを持って仕事を続けられること、それが私たちの願いです。
+      </div>
+    </div>
+    <div class="profile-right">
+      <div class="profile-points">
+        <div class="profile-point reveal">
+          <div class="profile-point-title">売るべき商品がないから、中立でいられる</div>
+          <div class="profile-point-desc">特定のツールや広告商品の販売とは無縁。本当に必要なことだけを提案します。</div>
+        </div>
+        <div class="profile-point reveal">
+          <div class="profile-point-title">現場経験者だから、絵空事を言わない</div>
+          <div class="profile-point-desc">現場監督・工事業の実務経験があるからこそ、机上の空論にならないアドバイスができます。</div>
+        </div>
+        <div class="profile-point reveal">
+          <div class="profile-point-title">一人親方・小規模専門だから、規模感が合う</div>
+          <div class="profile-point-desc">大手向けの話ではなく、今のあなたの規模に合った現実的な改善をともに考えます。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FLOW -->
+<section class="section-flow">
+  <div class="section-flow-inner">
+    <div class="section-label reveal">
+      <div class="section-label-line"></div>
+      <div class="section-label-text">Process</div>
+    </div>
+    <h2 class="section-title reveal">ご相談の流れ</h2>
+
+    <div class="flow-steps">
+      <div class="flow-step reveal">
+        <div class="flow-num">01</div>
+        <div class="flow-body">
+          <div class="flow-title">無料相談のお申し込み</div>
+          <div class="flow-desc">電話・LINE・フォームからお気軽にご連絡ください。まず今のお困りごとを聞かせてください。</div>
+        </div>
+      </div>
+      <div class="flow-step reveal">
+        <div class="flow-num">02</div>
+        <div class="flow-body">
+          <div class="flow-title">現状ヒアリング（60〜90分）</div>
+          <div class="flow-desc">課題をお伺いし、改善の余地を見つけます。オンラインでも対面でも対応可能です。</div>
+        </div>
+      </div>
+      <div class="flow-step reveal">
+        <div class="flow-num">03</div>
+        <div class="flow-body">
+          <div class="flow-title">支援プランと見積もり提案</div>
+          <div class="flow-desc">課題に合う期間・内容をご提案します。無理な押し売りは一切しません。</div>
+        </div>
+      </div>
+      <div class="flow-step reveal">
+        <div class="flow-num">04</div>
+        <div class="flow-body">
+          <div class="flow-title">契約・キックオフ</div>
+          <div class="flow-desc">目標設定と、何から始めるかを一緒に決めます。</div>
+        </div>
+      </div>
+      <div class="flow-step reveal">
+        <div class="flow-num">05</div>
+        <div class="flow-body">
+          <div class="flow-title">毎月の経過確認・改善</div>
+          <div class="flow-desc">現場・数字・人、3つの視点で継続的に改善していきます。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section-faq">
+  <div class="section-faq-inner">
+    <div class="section-label reveal">
+      <div class="section-label-line"></div>
+      <div class="section-label-text">FAQ</div>
+    </div>
+    <h2 class="section-title reveal">よくある質問</h2>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-mark">Q</span>
+          <span class="faq-q-text">コンサルを依頼したことがなくて不安です。何から相談すればいいですか？</span>
+          <span class="faq-q-arrow">▼</span>
+        </div>
+        <div class="faq-a">
+          問題ありません。一人親方〜小規模事業者専門にサポートしているので、初めてのご相談となることが多いです。まずは今のお困りごとをそのまま話してください。こちらから質問しながら課題を一緒に明確にしていきます。
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-mark">Q</span>
+          <span class="faq-q-text">職人歴が長く、数字やITは苦手ですが大丈夫ですか？</span>
+          <span class="faq-q-arrow">▼</span>
+        </div>
+        <div class="faq-a">
+          もちろん大丈夫です。大切なのは手元に残るお金を多くすること。数字やITに強くなることではありません。誇りを持って仕事を続けられるようにすること、それが私たちの仕事です。
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-mark">Q</span>
+          <span class="faq-q-text">まだ一人親方でも依頼できますか？</span>
+          <span class="faq-q-arrow">▼</span>
+        </div>
+        <div class="faq-a">
+          はい、問題ありません。小規模事業専門の経営・現場改善サポートなので、一人親方の方からも多くご相談をいただいております。規模の大小は関係なく、今の状況に合わせてご提案します。
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="section-cta">
+  <div class="section-cta-inner">
+    <div class="cta-tagline reveal">
+      まずは今の状態を整理する<br>
+      60分の無料相談から。
+    </div>
+    <p class="cta-sub reveal">
+      費用は一切かかりません。話すだけで、頭の中が整理されることも多いです。<br>
+      電話でもLINEでも、やりやすい方法でどうぞ。
+    </p>
+
+    <div class="reveal">
+      <div class="cta-tel-block">
+        <div class="cta-tel-label">📞 電話でのご相談（優先）</div>
+        <a href="tel:0425083638" class="cta-tel-number">042-508-3638</a>
+        <div class="cta-tel-time">平日 9:00〜18:00　通話料無料</div>
+      </div>
+    </div>
+
+    <div class="reveal">
+      <a href="https://lin.ee/OU11HnHH" target="_blank" class="cta-line-btn">
+        &#9642; LINEで友だち追加して相談する
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">建設業専門 <span>経営・現場</span> コンサルティング</div>
+  <div class="footer-copy">&copy; 2024 建設業専門 経営・現場コンサルティング. All rights reserved.</div>
+</footer>
+
+<!-- FLOATING CTA (mobile) -->
+<div class="floating-cta">
+  <a href="tel:0425083638" class="float-tel">
+    <strong>042-508-3638</strong>
+    <span>📞 電話で無料相談（優先）</span>
+  </a>
+  <a href="https://lin.ee/OU11HnHH" target="_blank" class="float-line">
+    <strong>LINE</strong>
+    <span>&#9642; LINEで相談する</span>
+  </a>
+</div>
+
+<script>
+  // FAQ toggle
+  function toggleFaq(el) {
+    const item = el.parentElement;
+    item.classList.toggle('open');
+  }
+
+  // Scroll reveal
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => {
+          entry.target.classList.add('visible');
+        }, 80);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+
+  reveals.forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
