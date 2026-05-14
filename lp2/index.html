@@ -823,6 +823,85 @@
     transform: none;
   }
 
+  /* ===== COMPANY INFO ===== */
+  .section-company {
+    background: var(--white);
+    padding: 100px 48px;
+  }
+  .section-company-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .company-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 720px;
+    gap: 64px;
+    margin-top: 56px;
+    align-items: start;
+  }
+  .greeting-name {
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    color: var(--red);
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .greeting-title {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 900;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 24px;
+    border-left: 4px solid var(--red);
+    padding-left: 16px;
+  }
+  .greeting-body {
+    font-size: 0.88rem;
+    color: var(--gray-text);
+    line-height: 2;
+  }
+  .greeting-sig {
+    margin-top: 24px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--black);
+  }
+  .greeting-sig span {
+    display: block;
+    font-size: 1.05rem;
+    font-weight: 900;
+    margin-top: 4px;
+  }
+  .company-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid var(--black);
+  }
+  .company-table tr { border-bottom: 1px solid var(--gray-mid); }
+  .company-table tr:last-child { border-bottom: none; }
+  .company-table th {
+    background: var(--black);
+    color: var(--white);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    padding: 14px 18px;
+    white-space: nowrap;
+    vertical-align: top;
+    text-align: left;
+    width: 110px;
+  }
+  .company-table td {
+    padding: 14px 18px;
+    font-size: 0.88rem;
+    color: var(--black);
+    line-height: 1.75;
+    vertical-align: top;
+  }
+  .company-table tr:nth-child(even) td { background: var(--gray-light); }
+
   /* ===== RESPONSIVE ===== */
   @media (max-width: 768px) {
     header { padding: 0 16px; height: 56px; }
@@ -841,6 +920,8 @@
     .section-cta { padding: 72px 20px; }
 
     .section-profile-inner { grid-template-columns: 1fr; gap: 40px; }
+    .company-grid { grid-template-columns: 1fr; gap: 40px; }
+    .section-company { padding: 72px 20px; }
 
     .feature-body { grid-template-columns: 1fr; gap: 8px; }
 
@@ -1029,6 +1110,41 @@
           <div class="profile-point-desc">大手向けの話ではなく、今のあなたの規模に合った現実的な改善をともに考えます。</div>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPANY -->
+<section class="section-company">
+  <div class="section-company-inner">
+    <div class="section-label reveal">
+      <div class="section-label-line"></div>
+      <div class="section-label-text">Company</div>
+    </div>
+    <h2 class="section-title reveal">当社について</h2>
+
+    <div class="company-grid">
+      <!-- 代表挨拶 -->
+      <div class="reveal">
+        <div class="greeting-name">Greeting — 代表からのご挨拶</div>
+        <div class="greeting-title">"SaSaに頼んでよかった"と感じていただけるサービスを追求してまいります。</div>
+        <div class="greeting-body">
+          皆様、はじめまして。SaSaコンサルティング株式会社の代表、原田 賢（さとし）と申します。<br><br>
+          私たちは「地域の皆様に長く頼られる会社でありたい」という思いを大切にしながら、建築工事事業と経営コンサルティング・デジタル支援事業を展開しています。<br><br>
+          SaSa（＝サポートし続ける）という社名には、事業の種類に関わらず"困ったときにすぐ相談できる存在であり続けたい"という理念を込めました。<br><br>
+          家づくりや暮らしの整備、そして事業のデジタル活用——分野は異なりますが、そこに共通しているのは「不安や迷いをなくし、安心して任せてもらえる環境を整えること」です。<br><br>
+          地域に根ざし、お客様一人ひとりの課題に丁寧に向き合う姿勢をこれからも大切にしてまいります。
+        </div>
+        <div class="greeting-sig">
+          SaSaコンサルティング株式会社　代表取締役
+          <span>原田 賢（はらだ さとし）</span>
+        </div>
+        <a href="https://sasa-consul.net/company" target="_blank" class="btn-primary" style="margin-top:32px;display:inline-flex;">
+          当社について詳しく見る &#8599;
+        </a>
+      </div>
+
+
     </div>
   </div>
 </section>
